@@ -1,2 +1,5 @@
-Markdown==2.6.11
+Markdown==3.0.1
 pelican==3.7.1
+pip==18.1
+setuptools==40.5.0
+wheel==0.32.2

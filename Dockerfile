@@ -1,7 +1,4 @@
-FROM python:3.7.0-alpine3.8
-
-LABEL maintainer="william@subtlecoolness.com"
-LABEL version="0.0.1"
+FROM python:3.7.1-alpine3.8
 
 COPY requirements.txt /requirements.txt
 
@@ -13,3 +10,7 @@ WORKDIR /pelican-site
 
 ENTRYPOINT ["pelican"]
 CMD ["content"]
+
+LABEL maintainer=william@subtlecoolness.com \
+      org.label-schem.schema-version=1.0 \
+      org.label-schema.version=0.0.1
