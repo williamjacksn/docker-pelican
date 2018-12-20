@@ -12,4 +12,4 @@ CMD ["content"]
 
 LABEL maintainer=william@subtlecoolness.com \
       org.label-schema.schema-version=1.0 \
-      org.label-schema.version=0.0.2
+      org.label-schema.version=0.0.3
