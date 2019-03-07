@@ -10,6 +10,4 @@ WORKDIR /pelican-site
 ENTRYPOINT ["pelican"]
 CMD ["content"]
 
-LABEL maintainer=william@subtlecoolness.com \
-      org.label-schema.schema-version=1.0 \
-      org.label-schema.version=0.0.3
+LABEL maintainer=william@subtlecoolness.com
