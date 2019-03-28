@@ -7,7 +7,7 @@ RUN /usr/local/bin/pip install --no-cache-dir --requirement /requirements.txt
 RUN mkdir /pelican-site
 WORKDIR /pelican-site
 
-ENTRYPOINT ["pelican"]
+ENTRYPOINT ["/usr/local/bin/pelican"]
 CMD ["content"]
 
 LABEL maintainer=william@subtlecoolness.com
