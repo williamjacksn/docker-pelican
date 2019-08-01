@@ -12,4 +12,4 @@ CMD ["content"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-pelican" \
-      org.opencontainers.image.version="4.1.0"
+      org.opencontainers.image.version=4.1.0
