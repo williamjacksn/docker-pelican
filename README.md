@@ -1,3 +1,9 @@
+# docker-pelican
+
+A Docker image for [getpelican/pelican](https://github.com/getpelican/pelican).
+
+## Usage
+
 To quick-start a new site:
 
 1.  Create a new folder for your site: `mkdir my-site`
