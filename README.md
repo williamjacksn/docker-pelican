@@ -2,6 +2,12 @@
 
 A Docker image for [getpelican/pelican](https://github.com/getpelican/pelican).
 
+## Available tags
+
+*   `latest` &rarr; `4.1.1`
+*   `4.1.0`
+*   `4.0.1`
+
 ## Usage
 
 To quick-start a new site:
