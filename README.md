@@ -4,7 +4,8 @@ A Docker image for [getpelican/pelican](https://github.com/getpelican/pelican).
 
 ## Available tags
 
-*   `latest` &rarr; `4.1.3`
+*   `latest` &rarr; `4.2.0`
+*   `4.1.3`
 *   `4.1.2`
 *   `4.1.1`
 *   `4.1.0`

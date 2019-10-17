@@ -1,6 +1,6 @@
 FROM python:3.8.0-alpine3.10
 
-ENV PELICAN_VERSION="4.1.3" \
+ENV PELICAN_VERSION="4.2.0" \
     PYTHONUNBUFFERED="1"
 
 RUN /usr/local/bin/pip install --no-cache-dir pelican[Markdown]==${PELICAN_VERSION}
