@@ -1,4 +1,4 @@
-FROM python:3.8.0-alpine3.10
+FROM python:3.8.1-alpine3.11
 
 ARG PELICAN_VERSION="4.2.0"
 ENV PYTHONUNBUFFERED="1"
