@@ -11,5 +11,4 @@ WORKDIR /pelican-site
 ENTRYPOINT ["/usr/local/bin/pelican"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
-      org.opencontainers.image.source="https://github.com/williamjacksn/docker-pelican" \
-      org.opencontainers.image.version="4.2.0"
+      org.opencontainers.image.source="https://github.com/williamjacksn/docker-pelican"
