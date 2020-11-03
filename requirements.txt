@@ -1,2 +1,2 @@
 --extra-index-url https://alpine-wheels.github.io/index
-pelican[markdown]==4.5.0
+pelican[markdown]==4.5.1
