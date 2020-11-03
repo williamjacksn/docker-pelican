@@ -2,5 +2,4 @@ version: '3'
 
 services:
   pelican:
-    image: williamjackson/pelican
-    build: .
+    image: ghcr.io/williamjacksn/pelican
