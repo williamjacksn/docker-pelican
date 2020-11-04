@@ -1,6 +1,16 @@
 # docker-pelican
 
-A Docker image for [getpelican/pelican](https://github.com/getpelican/pelican).
+A Docker image for [getpelican/pelican][a].
+
+[a]: https://github.com/getpelican/pelican
+
+```sh
+docker image pull ghcr.io/williamjacksn/pelican
+```
+
+This image is also available [on Docker Hub][b] as `williamjackson/pelican`.
+
+[b]: https://hub.docker.com/r/williamjackson/pelican
 
 ## Usage
 
