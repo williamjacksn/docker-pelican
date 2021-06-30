@@ -1,3 +1,4 @@
 services:
   pelican:
+    build: .
     image: ghcr.io/williamjacksn/pelican

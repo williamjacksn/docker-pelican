@@ -1,14 +1,19 @@
 FROM python:3.9.6-alpine3.14
 
-ENV PYTHONUNBUFFERED="1"
+RUN /usr/sbin/adduser -g python -D python
 
-COPY requirements.txt /docker-pelican/requirements.txt
+USER python
+RUN /usr/local/bin/python -m venv /home/python/venv
 
-RUN /usr/local/bin/pip install --no-cache-dir --requirement /docker-pelican/requirements.txt
+ENV PATH="/home/python/venv/bin:${PATH}" \
+    PYTHONUNBUFFERED="1"
+
+COPY --chown=python:python requirements.txt /home/python/docker-pelican/requirements.txt
+RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-pelican/requirements.txt
 
 WORKDIR /pelican-site
 
-ENTRYPOINT ["/usr/local/bin/pelican"]
+ENTRYPOINT ["/home/python/venv/bin/pelican"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-pelican"
