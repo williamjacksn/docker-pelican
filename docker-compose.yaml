@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   pelican:
     image: ghcr.io/williamjacksn/pelican
