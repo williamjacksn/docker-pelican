@@ -61,7 +61,7 @@ jobs:
       - name: Tag and push release image to registries
         if: github.event_name == 'release'
         run: |
-          docker image tag ${{ env.ghcr_image_name }}:latest ${{ env.image_name }}:${{ github.event.release.tag_name }}
+          docker image tag ${{ env.ghcr_image_name }}:latest ${{ env.ghcr_image_name }}:${{ github.event.release.tag_name }}
           docker image push ${{ env.ghcr_image_name }}:${{ github.event.release.tag_name }}
           docker image tag ${{ env.docker_hub_image_name }}:latest ${{ env.docker_hub_image_name }}:${{ github.event.release.tag_name }}
           docker image push ${{ env.docker_hub_image_name }}:${{ github.event.release.tag_name }}
