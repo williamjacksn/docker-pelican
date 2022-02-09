@@ -22,7 +22,7 @@ markdown==3.3.4
     # via pelican
 markupsafe==2.0.1
     # via jinja2
-pelican[markdown]==4.7.1
+pelican[markdown]==4.7.2
     # via -r requirements.in
 pygments==2.9.0
     # via
