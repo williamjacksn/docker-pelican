@@ -1,4 +1,9 @@
 services:
-  pelican:
-    build: .
+  shell:
+    entrypoint:
+      - /bin/sh
     image: ghcr.io/williamjacksn/pelican
+    init: true
+    volumes:
+      - ./:/home/python/docker-pelican
+    working_dir: /home/python/docker-pelican
