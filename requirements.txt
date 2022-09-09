@@ -14,7 +14,7 @@ commonmark==0.9.1
     # via rich
 docutils==0.19
     # via pelican
-feedgenerator==1.9.1
+feedgenerator==2.0.0
     # via pelican
 jinja2==3.0.1
     # via pelican
@@ -37,8 +37,6 @@ pytz==2021.1
 rich==10.11.0
     # via pelican
 six==1.16.0
-    # via
-    #   feedgenerator
-    #   python-dateutil
+    # via python-dateutil
 unidecode==1.2.0
     # via pelican
