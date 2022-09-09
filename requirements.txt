@@ -18,7 +18,7 @@ feedgenerator==2.0.0
     # via pelican
 jinja2==3.1.2
     # via pelican
-markdown==3.3.4
+markdown==3.4.1
     # via pelican
 markupsafe==2.0.1
     # via jinja2
