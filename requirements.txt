@@ -24,7 +24,7 @@ markupsafe==2.1.1
     # via jinja2
 pelican[markdown]==4.8.0
     # via -r requirements.in
-pygments==2.9.0
+pygments==2.13.0
     # via
     #   pelican
     #   rich
