@@ -8,8 +8,6 @@
 
 blinker==1.5
     # via pelican
-colorama==0.4.5
-    # via rich
 commonmark==0.9.1
     # via rich
 docutils==0.19
@@ -34,7 +32,7 @@ pytz==2022.2.1
     # via
     #   feedgenerator
     #   pelican
-rich==10.11.0
+rich==12.5.1
     # via pelican
 six==1.16.0
     # via python-dateutil
