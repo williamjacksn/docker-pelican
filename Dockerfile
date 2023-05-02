@@ -6,6 +6,7 @@ USER python
 RUN /usr/local/bin/python -m venv /home/python/venv
 
 ENV PATH="/home/python/venv/bin:${PATH}" \
+    PYTHONDONTWRITEBYTECODE="1" \
     PYTHONUNBUFFERED="1"
 
 COPY --chown=python:python requirements.txt /home/python/docker-pelican/requirements.txt
