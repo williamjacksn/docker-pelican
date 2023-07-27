@@ -31,11 +31,6 @@ jobs:
       - name: Build the container image
         uses: docker/build-push-action@v4.1.1
         with:
-          build-args: |
-            BUILDKIT_INLINE_CACHE=1
-          cache-from: |
-            ${{ env.ghcr_image_name }}
-          load: true
           platforms: linux/amd64,linux/arm64
           tags: |
             ${{ env.ghcr_image_name }}
@@ -57,15 +52,20 @@ jobs:
           username: ${{ secrets.docker_hub_username }}
 
       - name: Push latest image to registries
-        if: github.event_name == 'push'
-        run: |
-          docker image push ${{ env.ghcr_image_name }}
-          docker image push ${{ env.docker_hub_image_name }}
+        uses: docker/build-push-action@v4.1.1
+        with:
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            ${{ env.ghcr_image_name }}:latest
+            ${{ env.docker_hub_image_name }}:latest
 
       - name: Tag and push release image to registries
         if: github.event_name == 'release'
-        run: |
-          docker image tag ${{ env.ghcr_image_name }}:latest ${{ env.ghcr_image_name }}:${{ github.event.release.tag_name }}
-          docker image push ${{ env.ghcr_image_name }}:${{ github.event.release.tag_name }}
-          docker image tag ${{ env.docker_hub_image_name }}:latest ${{ env.docker_hub_image_name }}:${{ github.event.release.tag_name }}
-          docker image push ${{ env.docker_hub_image_name }}:${{ github.event.release.tag_name }}
+        uses: docker/build-push-action@v4.1.1
+        with:
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: |
+            ${{ env.ghcr_image_name }}:${{ github.event.release.tag_name }}
+            ${{ env.docker_hub_image_name }}:${{ github.event.release.tag_name }}
