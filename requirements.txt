@@ -6,7 +6,7 @@
 #
 --extra-index-url https://alpine-wheels.github.io/index
 
-blinker==1.6.3
+blinker==1.7.0
     # via pelican
 docutils==0.20.1
     # via pelican
@@ -14,7 +14,7 @@ feedgenerator==2.1.0
     # via pelican
 jinja2==3.1.2
     # via pelican
-markdown==3.5
+markdown==3.5.1
     # via pelican
 markdown-it-py==3.0.0
     # via rich
