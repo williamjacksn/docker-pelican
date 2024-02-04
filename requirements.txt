@@ -22,7 +22,7 @@ markdown==3.5.2
     # via pelican
 markdown-it-py==3.0.0
     # via rich
-markupsafe==2.1.4
+markupsafe==2.1.5
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
@@ -36,7 +36,7 @@ pygments==2.17.2
     #   rich
 python-dateutil==2.8.2
     # via pelican
-pytz==2023.3.post1
+pytz==2024.1
     # via feedgenerator
 rich==13.7.0
     # via pelican
