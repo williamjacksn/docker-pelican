@@ -8,9 +8,9 @@
 
 anyio==4.3.0
     # via watchfiles
-blinker==1.7.0
+blinker==1.8.0
     # via pelican
-docutils==0.21.1
+docutils==0.21.2
     # via pelican
 feedgenerator==2.1.0
     # via pelican
