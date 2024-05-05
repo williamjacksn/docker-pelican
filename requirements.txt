@@ -8,7 +8,7 @@
 
 anyio==4.3.0
     # via watchfiles
-blinker==1.8.0
+blinker==1.8.1
     # via pelican
 docutils==0.21.2
     # via pelican
@@ -30,7 +30,7 @@ ordered-set==4.1.0
     # via pelican
 pelican[markdown]==4.9.1
     # via -r requirements.in
-pygments==2.17.2
+pygments==2.18.0
     # via
     #   pelican
     #   rich
