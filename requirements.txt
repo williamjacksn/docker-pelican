@@ -14,7 +14,7 @@ docutils==0.21.2
     # via pelican
 feedgenerator==2.1.0
     # via pelican
-idna==3.8
+idna==3.10
     # via anyio
 jinja2==3.1.4
     # via pelican
