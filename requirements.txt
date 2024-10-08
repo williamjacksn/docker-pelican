@@ -22,7 +22,7 @@ markdown==3.7
     # via pelican
 markdown-it-py==3.0.0
     # via rich
-markupsafe==3.0.0
+markupsafe==3.0.1
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
