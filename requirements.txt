@@ -4,8 +4,6 @@
 #
 #    pip-compile
 #
---extra-index-url https://alpine-wheels.github.io/index
-
 anyio==4.6.2.post1
     # via watchfiles
 blinker==1.8.2
