@@ -46,5 +46,5 @@ typing-extensions==4.12.2
     # via anyio
 unidecode==1.3.8
     # via pelican
-watchfiles==1.0.0
+watchfiles==1.0.3
     # via pelican
