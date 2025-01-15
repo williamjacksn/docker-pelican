@@ -26,9 +26,9 @@ mdurl==0.1.2
     # via markdown-it-py
 ordered-set==4.1.0
     # via pelican
-pelican[markdown]==4.10.2
+pelican[markdown]==4.11.0
     # via -r requirements.in
-pygments==2.19.1
+pygments==2.18.0
     # via
     #   pelican
     #   rich
