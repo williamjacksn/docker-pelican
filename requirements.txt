@@ -34,7 +34,7 @@ pygments==2.18.0
     #   rich
 python-dateutil==2.9.0.post0
     # via pelican
-pytz==2024.2
+pytz==2025.1
     # via feedgenerator
 rich==13.9.4
     # via pelican
