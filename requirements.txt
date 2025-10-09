@@ -34,7 +34,7 @@ pygments==2.18.0
     #   rich
 python-dateutil==2.9.0.post0
     # via pelican
-rich==14.1.0
+rich==14.2.0
     # via pelican
 six==1.17.0
     # via python-dateutil
