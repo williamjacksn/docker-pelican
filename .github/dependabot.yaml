@@ -3,14 +3,14 @@ updates:
   - package-ecosystem: docker
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
   - package-ecosystem: pip
     directory: /
     allow:
       - dependency-type: all
     schedule:
-      interval: daily
+      interval: weekly
