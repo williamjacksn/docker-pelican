@@ -1,18 +1,9 @@
 services:
-  pip-compile:
-    entrypoint:
-      - /home/python/venv/bin/pip-compile
-    image: ghcr.io/williamjacksn/pip-tools:py3.13
-    init: true
-    volumes:
-      - ./:/home/python/docker-pelican
-    working_dir: /home/python/docker-pelican
-
   shell:
     entrypoint:
-      - /bin/sh
+      - /bin/bash
     image: ghcr.io/williamjacksn/pelican
     init: true
     volumes:
-      - ./:/home/python/docker-pelican
-    working_dir: /home/python/docker-pelican
+      - ./:/app
+    working_dir: /app

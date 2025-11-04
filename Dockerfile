@@ -1,20 +1,20 @@
-FROM python:3.14-slim
+FROM ghcr.io/astral-sh/uv:0.9.7-trixie-slim
 
 RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
-
 USER python
-RUN /usr/local/bin/python -m venv /home/python/venv
 
-ENV PATH="/home/python/venv/bin:${PATH}" \
+WORKDIR /app
+COPY --chown=python:python .python-version pyproject.toml uv.lock ./
+RUN uv sync --frozen --no-dev
+
+ENV PATH="/app/.venv/bin:${PATH}" \
     PYTHONDONTWRITEBYTECODE="1" \
-    PYTHONUNBUFFERED="1"
-
-COPY --chown=python:python requirements.txt /home/python/docker-pelican/requirements.txt
-RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-pelican/requirements.txt
+    PYTHONUNBUFFERED="1" \
+    TZ="Etc/UTC"
 
 WORKDIR /pelican-site
 
-ENTRYPOINT ["/home/python/venv/bin/pelican"]
+ENTRYPOINT ["uv", "run", "--no-sync", "pelican"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-pelican"
