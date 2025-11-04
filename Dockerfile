@@ -14,7 +14,7 @@ ENV PATH="/app/.venv/bin:${PATH}" \
 
 WORKDIR /pelican-site
 
-ENTRYPOINT ["uv", "run", "--no-sync"]
+ENTRYPOINT ["uv", "run"]
 CMD ["pelican"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \

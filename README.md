@@ -21,8 +21,8 @@ To quick-start a new site:
 2.  Change to your new folder:  
     `cd my-site`
 3.  Run Pelican's quick-start:
-    * Linux or PowerShell: `docker container run -it --rm --entrypoint pelican-quickstart -v ${PWD}:/pelican-site ghcr.io/williamjacksn/pelican`
-    * Windows CMD: `docker container run -it --rm --entrypoint pelican-quickstart -v %cd%:/pelican-site ghcr.io/williamjacksn/pelican`
+    * Linux or PowerShell: `docker container run -it --rm -v ${PWD}:/pelican-site ghcr.io/williamjacksn/pelican pelican-quickstart`
+    * Windows CMD: `docker container run -it --rm -v %cd%:/pelican-site ghcr.io/williamjacksn/pelican pelican-quickstart`
 
 After making changes to your site content, generate the output with:
 
