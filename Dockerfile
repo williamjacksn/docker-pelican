@@ -14,7 +14,8 @@ ENV PATH="/app/.venv/bin:${PATH}" \
 
 WORKDIR /pelican-site
 
-ENTRYPOINT ["uv", "run", "--no-sync", "pelican"]
+ENTRYPOINT ["uv", "run", "--no-sync"]
+CMD ["pelican"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-pelican"
