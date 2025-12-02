@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.9.10-trixie-slim
+FROM ghcr.io/astral-sh/uv:0.9.14-trixie-slim
 
 RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
 USER python
