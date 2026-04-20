@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "markdown>=3.10",
-    "pelican>=4.11.0.post0",
+    "pelican>=4.12.0",
 ]
