@@ -11,12 +11,14 @@ on:
     types:
       - published
 
+concurrency:
+  group: build
+
 env:
   ghcr_image_name: ghcr.io/williamjacksn/pelican
   docker_hub_image_name: williamjackson/pelican
 
 jobs:
-
   build:
     name: Build the container image
     permissions:
